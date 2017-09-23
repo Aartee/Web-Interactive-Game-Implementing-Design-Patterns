@@ -8,4 +8,5 @@
 4. Prathmesh Parmar
 
 
-[Cumulative Flow Diagram](https://docs.google.com/spreadsheets/d/1UmRQTEI2CiksiykI0AxxsgKBSQMjxMpq187mC-V3RS8/edit#gid=2)][Meeting Minutes}(https://github.com/nguyensjsu/cmpe202-loops/wiki/Meeting-Minutes)
+[Cumulative Flow Diagram](https://docs.google.com/spreadsheets/d/1UmRQTEI2CiksiykI0AxxsgKBSQMjxMpq187mC-V3RS8/edit#gid=2)
+[Meeting Minutes](https://github.com/nguyensjsu/cmpe202-loops/wiki/Meeting-Minutes)
