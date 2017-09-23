@@ -9,4 +9,4 @@
 
 
 ### Link to Cumulative Flow Diagram (Team's Google Sheet):
-  [https://docs.google.com/spreadsheets/d/1UmRQTEI2CiksiykI0AxxsgKBSQMjxMpq187mC-V3RS8/edit#gid=2]
+  https://docs.google.com/spreadsheets/d/1UmRQTEI2CiksiykI0AxxsgKBSQMjxMpq187mC-V3RS8/edit#gid=2
