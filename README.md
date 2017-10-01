@@ -6,7 +6,7 @@
     2. NodeJS and NPM
     3. Grunt Manager
     
-###New Features
+### New Features
 New Difficulty Levels have been added to expand the game. 
 
 ## Team Members
