@@ -5,9 +5,13 @@ This document has been created to maintain a weekly journal entry to ensure that
 
 ## Week 1:
 
-**1. Simplicty**
+**1. Simplicty - Aarrtee**
 
-<Make an entry here>
+Anything we create or develop is useful only if its understandable to everyone. Simplicity is hence key to all implementations. Complex thoughts and ideas can be broken into small units and simplified and implemented. This makes the content easy and comprehensive to interpret. 
+
+This is the first week of the project and we have just begun discussing on the roles, task of each member, responsibilities, the technologies that can be used, alternate solutions, design and architecture and others. Whatever the idea may be, we shall put in effort to keep each unit simple and easy to interpret. 
+
+The unnecessary elements need to be removed so that the necessary elements of the work get highlighted which involves the ability to simplify them. Simplicity leads to greater appreciation since it helps us to reduce the problem and uncover an innovation solution.
 
 **2. Eliminate Waste - Prathmesh**
 
@@ -32,17 +36,23 @@ During our meetings as a team, every member respected every other member’s poi
 
 During first week of project, we met to set a path to follow during our project. we (team members) discussed about the project. We discussed about the core values of XP, the platform we will use for our project, discussed about creating a “user voice form”, defined the term “Done” for our backlog items, and about the choice of game engine to be used. All team members were fully motivated and participated very actively in the discussion, and courage was clearly visible throughout team’s research and discussion phase. Everyone in the team expressed his/her point of view, and provided valuable opinion during project selection. We discussed about the steps that we-as a team- will be jointly taking to make the success of our project certain. We talked about staying cling to reality during our project, and tell truth. We talked about conducting a courageous communication among team members where one should expect any sort of feedback about his/her work. No one should get upset based about the feedback he/she received, but rather consider the feedback to bring improvement to his/her work.
 
-**6. See the whole**
+**6. See The Whole - Aartee**
 
-<Make an entry here>  
+Small modules in the project combine together to create the entire project. Each module would be implemented on different technology depending on the member implementing the module.
+
+Combining all the modules and optimizing them to see it as a whole would need optimization of each unit of the project which includes ideas and their implementation. This would overall improve the whole project.
+
+Since we started the project discussion with the group with a decent pace, we were able to picturize things by end of the week. Each one’s tasks were discussed with other members and after collecting feedback, we tried implementing that. Checking on everyone for completion of their intended tasks and discussing in case of any concerns so that we can always represent every work in a team as a whole. 
   
 ---
 
 ## Week 2:
 
-**1. Simplicty**
+**1. Simplicty - Aartee**
 
-<Make an entry here>
+In this week our team has shown the simplicity(XP core value) by deciding the simple game that can be played in any browser. While choosing amongst various games, we have focused on how the game can be kept simple so that it will be easy to play and have fun to the players.
+
+Also, after deciding the Loopy Bird Game we gave our thought on how can we design the simple front-end for the customers. In that we all came to the conclusion of how all the screens will look like(title screen, game screen and game over screen). Henceforth, Simplicity is the key of our front-end and back-end design and development of the game.
 
 **2. Eliminate Waste**
 
@@ -65,9 +75,11 @@ In the second week of our project development, we met to share our portions of w
 For our next meeting, we agreed on different roles to be played in agile development. New tasks about the project for the 2nd week were generated and allocated to team members. Shaiker was assigned the background audio and proper win and loss for the screen, Junaid was assigned themes for our game, Aartee was assigned the code, and Prathmesh was assigned the adding basic objects and obstacles to the game. Courage was seen in the team members, since everybody accepted the assigned task very happily. All team members informed about the time period required to finish the assigned task which was very courageous considering the fact that all team members are working on number of other projects for their other classes beside everybody is going to have mid-terms next week.
  
 
-**6. See the whole**
+**6. See The Whole - Aartee**
 
-<Make an entry here>  
+This week each team member has learned the MelonJS by following the tutorial. Tutorial included development of two games(Space Invader and Platformer Tutorial).Everyone faced some issues initially like from where exactly start from, how to make local environment changes, how to install required packages, how to start the playing game locally, etc. But everyone is so helpful in the team so that both the tutorials are done and everyone now have the idea of MelonJS game engine.
+
+To see the whole with respect to the project, we have done major tasks like deciding the game, its features, its high level implementation, its UI, etc. Overall, the team is now all set for implementing the game features. 
 
 
   
