@@ -5,7 +5,7 @@ This document has been created to maintain a weekly journal entry to ensure that
 
 ## Week 1:
 
-**1. Simplicty - Aarrtee**
+**1. Simplicty - Aartee**
 
 Anything we create or develop is useful only if its understandable to everyone. Simplicity is hence key to all implementations. Complex thoughts and ideas can be broken into small units and simplified and implemented. This makes the content easy and comprehensive to interpret. 
 
