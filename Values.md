@@ -25,7 +25,9 @@ In the end of the meeting, we asked each member to think on what should be the g
 
 **3. Communication**
 
-<Make you Entry Here>
+This week all of us met for our very first meeting on Monday. We decided on how to proceed with the requirements and lay out the groundwork before proceeding further. As per the communication goes, we have setup decent communication channels which include biweekly meeting to discuss the agendas and project progress. We will be meeting every week to ensure proper communication amongst all the team members. In addition to this, we setup slack in order to communicate as well as keep up with the project deliverables.
+
+All of us selected our respective agile values to focus on. I chose communication and will be focusing on achieving that value throughout the project. This week, I will be focusing on researching the project technology as per our weekly agenda.
   
 **4. Respect - Junaid**
 
