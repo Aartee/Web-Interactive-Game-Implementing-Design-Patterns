@@ -94,7 +94,8 @@ Simplicity is the core of our game. In this week we have decided lots of feature
 We also discussed how the UI wireframes for the various screens of the game should be so that its development phase will be easy and simple.
 
 **2. Eliminate Waste - Prathmesh**
-<Make you Entry Here>
+
+This week, we discussed te UI wireframes, sequence diagrams and the activity diagrams so that we can get better understanding of our project. We also discussed various design patterns which we could implement in pur Project. We discueed what all complexeties could arrive in our project and we tried to eliminate them. Eliminate waste value has always been an integral part of our project.
 
 **3. Communication - Shikhar**
 <Make you Entry Here>
