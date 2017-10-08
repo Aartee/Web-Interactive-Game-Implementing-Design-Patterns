@@ -97,6 +97,7 @@ This week, we discussed te UI wireframes, sequence diagrams and the activity dia
 <Make you Entry Here>
 
 **4. Courage - Junaid**
+
 During the 3rd week of our project development, we finalized our research work. We have completed the tutorials of MelonJs, and team members discussed and agreed on the way forward. As a team, we analyzed the already available source code of clumsy birds, and we researched a bit deeper on that code to find out how can we expand on the currently available game. How can we use different designer patterns and how we can add additional features to the current game (expansion process). Courage was visible during all these activities since no team member hesitated to share his/her point of view and accepted their tasks that were assigned to them very happily.
 
 In the next week we already have decided about how we will proceed, and carry on our assigned part of work. Artee will work on code, Shaiker will work on adding audio to the game, Prathmesh will work on the sequence and activity diagram, Junaid (I) will work on the loading screen where I will add themes to the game, and also will work on the bird movement. Every team member is fully motivated and courageous to get all these task by the end of next week.
