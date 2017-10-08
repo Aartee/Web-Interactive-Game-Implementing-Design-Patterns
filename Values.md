@@ -66,18 +66,14 @@ During the whole meeting we tried to stay focus though there were times where we
 
 <Make you Entry Here>
   
-**4. Respect - Junaid**
-
-<Make an entry here>
-  
-**5. Courage - Junaid**
+**4. Courage - Junaid**
 
 In the second week of our project development, we met to share our portions of work that we did, and to collaborate on the work we did individually. During this week, we not only finalized our research, we also have chosen the game we are going to work on. We discussed about how we are going to proceed and work on our game. We went over all the tutorials of melonJS, and decided to expand on the game called clumsy bird. All the team members provided their opinion about how we should proceed. Courage was visible during the team meetings since all members were explaining their design very calmly. They shared as well as incorporated their ideas. Beside this courage was visible due to the fact that members discussed about staying truly cling to reality regardless of the cost, and if some sort of situation arises that requires changes or modifications in our project, we should immediately adapt to get over that situation in order to make sure that we do not run in to more bumps ahead, and so that our project can flow smoothly towards the completion.
 
 For our next meeting, we agreed on different roles to be played in agile development. New tasks about the project for the 2nd week were generated and allocated to team members. Shaiker was assigned the background audio and proper win and loss for the screen, Junaid was assigned themes for our game, Aartee was assigned the code, and Prathmesh was assigned the adding basic objects and obstacles to the game. Courage was seen in the team members, since everybody accepted the assigned task very happily. All team members informed about the time period required to finish the assigned task which was very courageous considering the fact that all team members are working on number of other projects for their other classes beside everybody is going to have mid-terms next week.
  
 
-**6. See The Whole - Aartee**
+**5. See The Whole - Aartee**
 
 This week each team member has learned the MelonJS by following the tutorial. Tutorial included development of two games(Space Invader and Platformer Tutorial).Everyone faced some issues initially like from where exactly start from, how to make local environment changes, how to install required packages, how to start the playing game locally, etc. But everyone is so helpful in the team so that both the tutorials are done and everyone now have the idea of MelonJS game engine.
 
@@ -100,13 +96,12 @@ This week, we discussed te UI wireframes, sequence diagrams and the activity dia
 **3. Communication - Shikhar**
 <Make you Entry Here>
 
-**4. Respect - Junaid**
-<Make you Entry Here>
+**4. Courage - Junaid**
+During the 3rd week of our project development, we finalized our research work. We have completed the tutorials of MelonJs, and team members discussed and agreed on the way forward. As a team, we analyzed the already available source code of clumsy birds, and we researched a bit deeper on that code to find out how can we expand on the currently available game. How can we use different designer patterns and how we can add additional features to the current game (expansion process). Courage was visible during all these activities since no team member hesitated to share his/her point of view and accepted their tasks that were assigned to them very happily.
 
-**5. Courage - Junaid**
-<Make you Entry Here>
+In the next week we already have decided about how we will proceed, and carry on our assigned part of work. Artee will work on code, Shaiker will work on adding audio to the game, Prathmesh will work on the sequence and activity diagram, Junaid (I) will work on the loading screen where I will add themes to the game, and also will work on the bird movement. Every team member is fully motivated and courageous to get all these task by the end of next week.
 
-**6. See The Whole - Aartee**
+**5. See The Whole - Aartee**
 
 This week, every team has understood the MelonJS game engine by successfully completing the turorials and exploring it to the fullest. Also, team has decided additional features to be implemented in the game. Team, as a whole, has designed UI wireframes for various screens in our Loopy Bird Game.
 
