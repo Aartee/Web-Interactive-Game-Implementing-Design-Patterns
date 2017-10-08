@@ -109,7 +109,9 @@ This week, every team has understood the MelonJS game engine by successfully com
 
 As a whole, each team member is currently understanding the Github source code for the already existing clumsy bird game so that it will be easy to implement decided new features on top of that.
 
+**6. Respect - Junaid**
 
+During our meetings as a team this week, we all worked together collaboratively, and shared our reserach work with one another, and asked our team members if any further improvement is needed in the work that whe have done/completed so far. Members reviewed the peers work, and provided their opinion. Factor of respect was clearly visible during communication among team members since every member's request was heard and full attention was paid by every other team member, and appropraite response was provided for the request.
 
 
   
