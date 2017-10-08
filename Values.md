@@ -94,7 +94,8 @@ We also discussed how the UI wireframes for the various screens of the game shou
 This week, we discussed te UI wireframes, sequence diagrams and the activity diagrams so that we can get better understanding of our project. We also discussed various design patterns which we could implement in pur Project. We discueed what all complexeties could arrive in our project and we tried to eliminate them. Eliminate waste value has always been an integral part of our project.
 
 **3. Communication - Shikhar**
-<Make you Entry Here>
+
+This week we all met and discussed on game levels to be implemented. A discussion happened on designing UI wireframes for each of the game screens. Active participation was ensured throughout the discussion and each member suggested their ideas which can be implemented at various levels in the clumsy bird game.
 
 **4. Courage - Junaid**
 
