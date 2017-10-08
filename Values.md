@@ -64,7 +64,7 @@ During the whole meeting we tried to stay focus though there were times where we
 
 **3. Communication - Shikhar**
 
-<Make you Entry Here>
+This week we met on Monday to discuss on how to proceed with the setup for running the melonJS tutorial. We also discussed if any team member is facing any issues with regards to the project setup. A meeting on Friday was set up to catch up on team progress and wrap up this week's tasks. The team finalized on the game and set up next week's tasks. It was ensured that proper communication channels being maintained for the team throughout the week.
   
 **4. Courage - Junaid**
 
