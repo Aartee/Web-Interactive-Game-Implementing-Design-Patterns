@@ -119,6 +119,9 @@ During our meetings as a team this week, we all worked together collaboratively,
 
 **1. Simplicty - Aartee**
 
+In this week we have customized the clumsy bird game to the loopy bird game by adding simple background, ground tile, title screen, etc. We have understood the melonJS code for the game by simply dividing code to everyone. So that one can focused on specific part and becomes easy to understand at first. Later everyone has explained the code to everyone. This is how our team has shown simplicity by following divide and conquer method.
+
+In this week each member has explored the code thoroughly by implementing the simplicity core value.
 
 **2. Eliminate Waste - Prathmesh**
 
@@ -132,6 +135,9 @@ This week, we discussed and made changes to the existing game. We studied the im
 
 **5. See The Whole - Aartee**
 
+Everyone now has the clear understanding of the features of the game and how to proceed with its implementation in the MelonJS engine.
+
+As a whole, in this week each team member has explored the existing clumsy bird source code thoroughly so that it will be easy to enhance and add new features on top of that. Also, everyone has given there ideas while customizing the game so that it will be simple and fun to play the game.
 
 **6. Respect - Junaid**
 
