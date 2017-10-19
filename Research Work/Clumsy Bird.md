@@ -36,4 +36,3 @@ PLAY,GAME_OVER,etc.
 ## References
 1. [Clumsy Bird](https://medium.com/ellisonleao/clumsy-bird-an-open-source-flappy-bird-clone-cf615724730f)
 2. [Github Repo](https://github.com/ellisonleao/clumsy-bird/blob/master/README.md)
-3. 
