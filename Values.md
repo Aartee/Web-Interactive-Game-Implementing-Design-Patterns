@@ -113,5 +113,26 @@ As a whole, each team member is currently understanding the Github source code f
 
 During our meetings as a team this week, we all worked together collaboratively, and shared our reserach work with one another, and asked our team members if any further improvement is needed in the work that whe have done/completed so far. Members reviewed the peers work, and provided their opinion. Factor of respect was clearly visible during communication among team members since every member's request was heard and full attention was paid by every other team member, and appropraite response was provided for the request.
 
+---
+
+## Week 4:
+
+**1. Simplicty - Aartee**
+
+
+**2. Eliminate Waste - Prathmesh**
+
+This week, we discussed and made changes to the existing game. We studied the implemented classes and worked through the flow. After understanding the flow of the game we made changes and tried to enhance the game. The modified images were taken from open source.  We tried to stick to the basic plan of scrum thus eliminating waste by saving time and energy.  
+
+**3. Communication - Shikhar**
+
+
+**4. Courage - Junaid**
+
+
+**5. See The Whole - Aartee**
+
+
+**6. Respect - Junaid**
 
   
