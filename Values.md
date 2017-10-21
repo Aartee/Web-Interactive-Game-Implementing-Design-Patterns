@@ -133,6 +133,7 @@ This week we discussed on the pending issues and how we'll be moving forward. We
 
 **4. Courage - Junaid**
 
+During week 4 of our project, everybody seemed extremely courageous since the planned task were completed on time, and not late. Team was satisfied that all the scheduled tasks assigned to each team member were completed on time, and every team member is fully honoring the responsibilities assigned to him/her. Everybody in the team was happy to see that progress is being made in the right direction. During our this meeting, we planned the tasks for the 2nd phase of our project which is going to start next week.  Every team member was assigned the task to work on. I was assigned to design logo for the game, and understand the melonJS engine functions, and to shortlist the design patterns that we will implement in our project.
 
 **5. See The Whole - Aartee**
 
@@ -142,4 +143,3 @@ As a whole, in this week each team member has explored the existing clumsy bird 
 
 **6. Respect - Junaid**
 
-  
