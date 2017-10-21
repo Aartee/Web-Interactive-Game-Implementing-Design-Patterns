@@ -143,3 +143,4 @@ As a whole, in this week each team member has explored the existing clumsy bird 
 
 **6. Respect - Junaid**
 
+This week, we worked together and customized the clumsy bird game to loopy bird game. We shared our ideas with one another, and obtained the opinion of our team members regarding any further improvement. All members individually reviewed the work that we have completed so far, and provided their valuable opinions. Respect was clearly visible during opinion provision, and ideas sharing phase of our project. 
