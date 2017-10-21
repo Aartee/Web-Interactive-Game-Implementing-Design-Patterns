@@ -129,6 +129,7 @@ This week, we discussed and made changes to the existing game. We studied the im
 
 **3. Communication - Shikhar**
 
+This week we discussed on the pending issues and how we'll be moving forward. We decided on pur theme of the game and the game entities. We are going to make winter/ice based theme with white background. All members participated actively and proper communication was maintained. We picked some tasks and assigned it to ourselves and will be working on it through the enxt week.
 
 **4. Courage - Junaid**
 
