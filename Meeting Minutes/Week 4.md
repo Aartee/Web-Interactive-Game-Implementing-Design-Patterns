@@ -1,21 +1,22 @@
-##Agenda
+# Agenda
 
 Understand the workflow of the game.
 To understand the complexites of the implemented game.
 UNderstand how the new features will be implemented in the game.
 
-##Minutes
+# Minutes
 
-As stated in agenda, we decided the game to work on.
-XP core values updated on wiki for week 2.
-Team members discussed and share their ideas about the game that was chosen by team.
-Actions
+As stated in agenda, we understood the flow of the games.
+XP core values updated on wiki for week 4.
+The important entities were marked out.
+
+# Actions
 
 Updated and created new issues on taskboard, and moved some to “ready to start” to start working on those.
 Update CFD, and core values.
-Game chosen and finalized.
-TO DO
+The flow was explained and new features are being implemented.
 
-To take appropriate Steps to create a Procedure that will be followed to expand and develop the chosen game.
-Doing set up by installing nodeJS that is required for the game.
-We have decided the clumsy bird as the game for our project, and we will expand this game by incorporating various user levels.
+# TO DO
+
+To implement the new features.
+Start to apply design patterns in them.
