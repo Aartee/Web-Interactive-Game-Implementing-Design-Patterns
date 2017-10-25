@@ -6,7 +6,6 @@
     2. NodeJS and NPM
     3. Grunt Manager
     
-###CFD
 [Cumulative Flow Diagram ](https://docs.google.com/spreadsheets/d/1UmRQTEI2CiksiykI0AxxsgKBSQMjxMpq187mC-V3RS8/edit#gid=2)
 
 ### New Features
