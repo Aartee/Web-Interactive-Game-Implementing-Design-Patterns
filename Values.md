@@ -144,3 +144,31 @@ As a whole, in this week each team member has explored the existing clumsy bird 
 **6. Respect - Junaid**
 
 This week, we worked together and customized the clumsy bird game to loopy bird game. We shared our ideas with one another, and obtained the opinion of our team members regarding any further improvement. All members individually reviewed the work that we have completed so far, and provided their valuable opinions. Respect was clearly visible during opinion provision, and ideas sharing phase of our project. 
+
+---
+
+## Week 5:
+
+**1. Simplicty - Aartee**
+
+Scrum week has started from this week. We have decided to meet everyday to discuss the progress of the work, any problems while working, etc. We have kept working style simple such that everyone will work on separate feature of the game but with the collaboration with every other team members. By doing this it is easy to incraese the velocity of the work towards game as well as its not the complicate thing to focus on one feature at a time.
+
+In this week each member has worked on differnt features of the game by implementing the simplicity core value.
+
+**2. Eliminate Waste - Prathmesh**
+<Make your changes here>
+
+**3. Communication - Shikhar**
+<Make your changes here>
+
+**4. Courage - Junaid**
+<Make your changes here>
+
+**5. See The Whole - Aartee**
+
+Everyone now has the clear understanding of the features of the game and how to proceed with its implementation in the MelonJS engine.
+
+As a whole, in this week each team member has written the javascript code for various basic features of the game. Also, everyone has researched on design patterns that can be implemented in the game.
+
+**6. Respect - Junaid**
+<Make your changes here>
