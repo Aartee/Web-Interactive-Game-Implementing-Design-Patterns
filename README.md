@@ -5,6 +5,7 @@
     1. MelonJS Game Engine
     2. NodeJS and NPM
     3. Grunt Manager
+    4. Tween - Tweening engine for animations
     
 [Cumulative Flow Diagram ](https://docs.google.com/spreadsheets/d/1UmRQTEI2CiksiykI0AxxsgKBSQMjxMpq187mC-V3RS8/edit#gid=2)
 
