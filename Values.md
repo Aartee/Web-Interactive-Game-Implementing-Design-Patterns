@@ -162,7 +162,8 @@ In this week each member has worked on differnt features of the game by implemen
 <Make your changes here>
 
 **4. Courage - Junaid**
-<Make your changes here>
+
+This week we met on regular basis to discuss the work among team members, and to plan how to proceed during the scrum phase of our project. Aspect of courage was clearly visible in the fact that all team members seemed completely ready to move forward, and collaborate with one another. Team members are working on various features of the game in collaboration with one another. The important aspect that is most prominently visible in this team work is that each team member clearly communicate and discuss his /her task with other team members to get the opinion of other members.
 
 **5. See The Whole - Aartee**
 
