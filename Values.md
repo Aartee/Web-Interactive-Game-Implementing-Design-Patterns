@@ -163,7 +163,8 @@ The code and the features have been finalized and we started hands on on our cod
 The Eliminate waste core value was always kept in mind while building the project.
 
 **3. Communication - Shikhar**
-<Make your changes here>
+
+This week we all met and discused on the code implementation. Each team member took specific gamne modules to develop. From now on, we will focus on working code delivery every week and will be going with the scrum approach. Proper communication was maintained throughout the team by organizing weekly meetings, communicating via emails etc. 
 
 **4. Courage - Junaid**
 
