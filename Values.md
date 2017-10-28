@@ -172,4 +172,5 @@ Everyone now has the clear understanding of the features of the game and how to 
 As a whole, in this week each team member has written the javascript code for various basic features of the game. Also, everyone has researched on design patterns that can be implemented in the game.
 
 **6. Respect - Junaid**
-<Make your changes here>
+
+This week, scrum phase of our project started, and we have started working on the code for our game. All team members discussed and provided their opinion about how to proceed and how to handle issues if one pops-up.  Respect among team members was clearly visible during the discussion about writing the code for game, and team members discussed about the expectations of users. User’s expectations were considered with all due respect, and will be considered in future too during the developmental phase of game.
