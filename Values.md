@@ -156,8 +156,10 @@ Scrum week has started from this week. We have decided to meet everyday to discu
 In this week each member has worked on differnt features of the game by implementing the simplicity core value.
 
 **2. Eliminate Waste - Prathmesh**
-<Make your changes here>
+This week the scrum methodology was started and for that we decided to have daily stand up meetings to dscuss about each other progress.
+The code and the features have been finalized and we started hands on on our coding.For the upcomings weeks our aim is to focus on the design patterns that can be  mlemented in the game and start implementing them.
 
+The Ekiminate waste core value was always kept in mind while building the project.
 **3. Communication - Shikhar**
 <Make your changes here>
 
