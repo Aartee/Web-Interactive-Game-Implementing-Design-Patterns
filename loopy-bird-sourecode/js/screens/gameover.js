@@ -23,6 +23,8 @@ game.GameOverScreen = me.ScreenObject.extend({
 
         this.handler = me.event.subscribe(me.event.KEYDOWN,
             function (action, keyCode, edge) {
+                //State Design Pattern
+                //Changes behavior as its state changes(Now the state is MENU).
                 if (action === "enter") {
                     me.state.change(me.state.MENU);
                 }
