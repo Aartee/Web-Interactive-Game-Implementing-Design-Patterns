@@ -1,11 +1,18 @@
 game.PlayScreen = me.ScreenObject.extend({
     init: function() {
+        me.audio.play("theme", true);
+        // lower audio volume on firefox browser
+        var vol = me.device.ua.indexOf("Firefox") !== -1 ? 0.3 : 0.5;
+        me.audio.setVolume(vol);
         this._super(me.ScreenObject, 'init');
     },
 
     onResetEvent: function() {
         me.game.reset();
-
+        me.audio.stop("theme");
+        if (!game.data.muted){
+            me.audio.play("theme", true);
+        }
         me.input.bindKey(me.input.KEY.SPACE, "fly", true);
         game.data.score = 0;
         game.data.steps = 0;
@@ -47,6 +54,7 @@ game.PlayScreen = me.ScreenObject.extend({
     },
 
     onDestroyEvent: function() {
+        me.audio.stopTrack('theme');
         // free the stored instance
         this.HUD = null;
         this.bird = null;
