@@ -1,6 +1,6 @@
 # CMPE 202 - Loops
 
-## All the changes are present in the dev branch instead of master branch.
+## All the code changes are present in the dev branch instead of master branch.
 
 ## Loopy Bird Game using MelonJS game engine
 ### Technologies that would be used in designing the game:
@@ -14,7 +14,30 @@
 [Burndown Chart-Sprint Task Sheet](https://docs.google.com/spreadsheets/d/1k9MmB6ykpqkRdRDCqNchKYFOxzuxVhkjeIK_mEqxOxU/edit#gid=0)
 
 ### New Features
-New Difficulty Levels have been added to expand the game. 
+1. New Difficulty Levels have been added to expand the game. 
+2. Different Strategies for scoring in the game has been changed.
+3. Menu for New Game, How to play, HiScore, etc. has been added.
+
+### Play the game locally
+
+Install latest version of node ([installation](https://docs.npmjs.com/getting-started/installing-node))
+
+Go to the source code directory and install npm packages mentioned in the package.json.
+```shell
+npm install
+```
+
+Build the MelonJS game
+```shell
+grunt
+```
+
+Connect to the game developed using MelonJS open source engine
+```shell
+grunt connect
+```
+
+Play the game at 0.0.0.0:8001 on the browser.
 
 ## Team Members
 
