@@ -109,6 +109,8 @@ game.BirdEntity = me.Entity.extend({
             .to({y: currentPos}, 1000)
             .to({y: finalPos}, 1000)
             .onComplete(function() {
+                //State Design Pattern
+                //Changes behavior as its state changes(Now the state is GAME OVER).
                 me.state.change(me.state.GAME_OVER);
             });
         this.endTween.start();
