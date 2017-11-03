@@ -53,11 +53,18 @@ var game = {
         me.input.bindPointer(me.input.KEY.SPACE);
         me.input.bindKey(me.input.KEY.S, "pause", true);
 
+        //Factory Design Pattern which 
+        //registers different entities in the game
+        this.factoryMethod();
+
+        me.state.change(me.state.MENU);  
+    },
+
+    "factoryMethod": function() {
         me.pool.register("clumsy", game.BirdEntity);
         me.pool.register("pipe", game.PipeEntity, true);
         me.pool.register("hit", game.HitEntity, true);
         me.pool.register("ground", game.Ground, true);
-        
-        me.state.change(me.state.MENU);  
     }
 };
+
