@@ -179,3 +179,29 @@ As a whole, in this week each team member has written the javascript code for va
 **6. Respect - Junaid**
 
 This week, scrum phase of our project started, and we have started working on the code for our game. All team members discussed and provided their opinion about how to proceed and how to handle issues if one pops-up.  Respect among team members was clearly visible during the discussion about writing the code for game, and team members discussed about the expectations of users. User’s expectations were considered with all due respect, and will be considered in future too during the developmental phase of game.
+
+---
+
+## Week 6:
+
+**1. Simplicty - Aartee**
+
+This week everyone has implemented desgin patterns in the game. While writing the code evryone has made sure that the code is maintable, reusable and simple to understand others. Also while coding we have made the class/interface structure simple enough so that it will be easy to integrate the class diagram for the whole game.
+
+Hence, in this week each member has implemented design patterns in the game by implementing the simplicity core value.
+
+**2. Eliminate Waste - Prathmesh**
+<Put your data here>
+
+**3. Communication - Shikhar**
+<Put your data here>
+
+**4. Courage - Junaid**
+<Put your data here>
+
+**5. See The Whole - Aartee**
+
+As a whole in this week everyone has implemented various design patterns in the game. While brainstorming on the design patterns everyone has made sure that the ingration of code will be easy and simple to understand. Also, thought on how to create the class diagram is given by everyone.
+
+**6. Respect - Junaid**
+<Put your data here>
