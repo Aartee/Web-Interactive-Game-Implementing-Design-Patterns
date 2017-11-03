@@ -191,7 +191,8 @@ This week everyone has implemented desgin patterns in the game. While writing th
 Hence, in this week each member has implemented design patterns in the game by implementing the simplicity core value.
 
 **2. Eliminate Waste - Prathmesh**
-<Put your data here>
+
+This week the target was to implement the design patterns in the game. While coding we implemented Design patterns that we learned in the lectures thus saving time to learn them again. The main challenge was to decide where and when which design pattern should be implemented. While coding we always keep out core value in mind.  
 
 **3. Communication - Shikhar**
 <Put your data here>
