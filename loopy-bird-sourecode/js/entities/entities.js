@@ -249,4 +249,4 @@ game.Ground = me.Entity.extend({
         return this._super(me.Entity, 'update', [dt]);
     },
 
-});
+})
