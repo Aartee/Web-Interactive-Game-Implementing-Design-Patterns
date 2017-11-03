@@ -11,7 +11,9 @@ game.GameOverScreen = me.ScreenObject.extend({
             steps: game.data.steps
         };
         me.save.add(this.savedData);
-
+        //Proxy Design Patterns
+        //The steps and the score are stored in cache memory. Here me.save act as a proxy object
+        //and saves the data for future use.
         if (!me.save.topSteps) me.save.add({topSteps: game.data.steps});
         if (game.data.steps > me.save.topSteps) {
             me.save.topSteps = game.data.steps;
