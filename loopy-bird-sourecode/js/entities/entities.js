@@ -17,7 +17,7 @@ game.BirdEntity = me.Entity.extend({
         this.body.removeShapeAt(0);
         this.body.addShape(new me.Ellipse(5, 5, 71, 51));
 
-        // a tween object for the flying physic effect
+        // a tween object for the flying physic effect.
         this.flyTween = new me.Tween(this.pos);
         this.flyTween.easing(me.Tween.Easing.Exponential.InOut);
 
@@ -25,10 +25,10 @@ game.BirdEntity = me.Entity.extend({
         this.angleTween = new me.Tween(this);
         this.angleTween.easing(me.Tween.Easing.Exponential.InOut);
 
-        // end animation tween
+        // end animation tween.
         this.endTween = null;
 
-        // collision shape
+        // collision shape.
         this.collided = false;
 
         this.gravityForce = 0.2;
@@ -98,7 +98,7 @@ game.BirdEntity = me.Entity.extend({
             me.device.vibrate(500);
             this.collided = true;
         }
-        // remove the hit box
+        // remove the hit box.
         if (obj.type === 'hit') {
             me.game.world.removeChildNow(obj);
             game.data.steps++;
@@ -147,7 +147,7 @@ game.PipeEntity = me.Entity.extend({
     },
 
     update: function(dt) {
-        // mechanics
+        // mechanics.
         if (!game.data.start) {
             return this._super(me.Entity, 'update', [dt]);
         }
