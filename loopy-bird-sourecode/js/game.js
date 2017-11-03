@@ -51,6 +51,7 @@ var game = {
         me.input.bindKey(me.input.KEY.SPACE, "fly", true);
         me.input.bindKey(me.input.KEY.M, "mute", true);
         me.input.bindPointer(me.input.KEY.SPACE);
+        me.input.bindKey(me.input.KEY.S, "pause", true);
 
         me.pool.register("clumsy", game.BirdEntity);
         me.pool.register("pipe", game.PipeEntity, true);

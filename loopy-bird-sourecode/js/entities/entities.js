@@ -70,6 +70,17 @@ game.BirdEntity = me.Entity.extend({
         this.renderable.currentTransform.rotate(this.currentAngle);
         me.Rect.prototype.updateBounds.apply(this);
 
+        if (me.input.isKeyPressed("pause")) {
+            me.state.pause();
+
+            var resume_loop = setInterval(function resume() {
+                if (me.input.isKeyPressed("pause")) {
+                    clearInterval(resume_loop);
+                    me.state.resume();
+                }
+            },200);
+        }
+
         var hitSky = -80; // bird height + 20px
         if (this.pos.y <= hitSky || this.collided) {
             game.data.start = false;
