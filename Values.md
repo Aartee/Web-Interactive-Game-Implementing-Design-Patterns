@@ -198,7 +198,8 @@ This week the target was to implement the design patterns in the game. While cod
 <Put your data here>
 
 **4. Courage - Junaid**
-<Put your data here>
+
+Team meetings during this week consists of discussion about the code that we developed and the design patterns that we implemented. We discussed about the dynamics of our code. Our code is reusable and very easy to maintain. Each team member analyzed the code to check if any improvement is possible, and provided his/her valuable opinion about the code. 
 
 **5. See The Whole - Aartee**
 
