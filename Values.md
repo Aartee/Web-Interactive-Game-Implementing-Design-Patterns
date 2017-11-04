@@ -195,7 +195,8 @@ Hence, in this week each member has implemented design patterns in the game by i
 This week the target was to implement the design patterns in the game. While coding we implemented Design patterns that we learned in the lectures thus saving time to learn them again. The main challenge was to decide where and when which design pattern should be implemented. While coding we always keep out core value in mind.  
 
 **3. Communication - Shikhar**
-<Put your data here>
+
+This week we decided on design patterns to implement in our age. We all met for the meeting and each member chose certain patterns that he/she is going to implement. Besides this, each member suggested which game features he/she wants to implement. Proper communication was observed throughout the week.
 
 **4. Courage - Junaid**
 
