@@ -17,6 +17,7 @@
 1. New Difficulty Levels have been added to expand the game. 
 2. Different Strategies for scoring in the game has been changed.
 3. Menu for New Game, How to play, HiScore, etc. has been added.
+4. Pause/Resume game
 
 ### Play the game locally
 
