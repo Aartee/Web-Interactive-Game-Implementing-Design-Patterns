@@ -14,9 +14,11 @@ game.GameOverScreen = me.ScreenObject.extend({
         //Proxy Design Patterns
         //The steps and the score are stored in cache memory. Here me.save act as a proxy object
         //and saves the data for future use.
+        game.data.newHiScore = false;
         if (!me.save.topSteps) me.save.add({topSteps: game.data.steps});
         if (game.data.steps > me.save.topSteps) {
             me.save.topSteps = game.data.steps;
+            //Observer Pattern to notify user of new hi score
             game.data.newHiScore = true;
         }
         me.input.bindKey(me.input.KEY.ENTER, "enter", true);
@@ -54,14 +56,24 @@ game.GameOverScreen = me.ScreenObject.extend({
         me.game.world.addChild(this.ground1, 11);
         me.game.world.addChild(this.ground2, 11);
 
-        // add the dialog witht he game information
+        // add the dialog with the game information
         if (game.data.newHiScore) {
+            //Oberver design pattern - notifying player a new hi-score
             var newRect = new me.Sprite(
+                gameOverBG.width/2,
+                gameOverBG.height/2,
+                {image: 'newhiscore'}
+            );
+            me.game.world.addChild(newRect, 12);
+        }else{
+            //Oberver design pattern - notifying player to play more to beat
+            //the hi-score
+            var newRect1 = new me.Sprite(
                 gameOverBG.width/2,
                 gameOverBG.height/2,
                 {image: 'new'}
             );
-            me.game.world.addChild(newRect, 12);
+            me.game.world.addChild(newRect1, 12);
         }
 
         this.dialog = new (me.Renderable.extend({
@@ -70,15 +82,18 @@ game.GameOverScreen = me.ScreenObject.extend({
                 this._super(me.Renderable, 'init',
                     [0, 0, me.game.viewport.width/2, me.game.viewport.height/2]
                 );
-                this.font = new me.Font('gamefont', 40, 'black', 'left');
+                this.font = new me.Font('gamefont', 20, 'black', 'left');
                 this.steps = 'Steps: ' + game.data.steps.toString();
                 this.topSteps= 'Higher Step: ' + me.save.topSteps.toString();
+                this.newHiScoreMessage = 'Congratulations!!! New Hi Score';
+                this.oldHiScoreMessage = 'Well Done! Play again to beat HiScore';
             },
 
             draw: function (renderer) {
                 var stepsText = this.font.measureText(renderer, this.steps);
                 var topStepsText = this.font.measureText(renderer, this.topSteps);
                 var scoreText = this.font.measureText(renderer, this.score);
+                var messageText = this.font.measureText(renderer, this.message);
 
                 //steps
                 this.font.draw(
@@ -95,6 +110,26 @@ game.GameOverScreen = me.ScreenObject.extend({
                     me.game.viewport.width/2 - stepsText.width/2 - 60,
                     me.game.viewport.height/2 + 50
                 );
+
+                if (game.data.newHiScore) {
+                    //Oberver design pattern - notifying player a new hi-score
+                    //newHiScoreMessage
+                    this.font.draw(
+                        renderer,
+                        this.newHiScoreMessage,
+                        me.game.viewport.width/2 - stepsText.width/2 - 60,
+                        me.game.viewport.height/2 + 100
+                    );
+                }else{
+                    //Oberver design pattern - notifying player to play more to beat
+                    //oldHiScoreMessage
+                    this.font.draw(
+                        renderer,
+                        this.oldHiScoreMessage,
+                        me.game.viewport.width/2 - stepsText.width/2 - 60,
+                        me.game.viewport.height/2 + 100
+                    );
+                }  
             }
         }));
         me.game.world.addChild(this.dialog, 12);
