@@ -207,4 +207,5 @@ Team meetings during this week consists of discussion about the code that we dev
 As a whole in this week everyone has implemented various design patterns in the game. While brainstorming on the design patterns everyone has made sure that the ingration of code will be easy and simple to understand. Also, thought on how to create the class diagram is given by everyone.
 
 **6. Respect - Junaid**
-<Put your data here>
+
+The week we met to discuss about the design patterns we will implement in our game. Each member provided his/her point of view about the task, and each team member selected 2 design patterns for implementation. Factor of respect was clearly visible throughout the team discussion among all team members, and respect was equally considered while thinking about the users of game. 
