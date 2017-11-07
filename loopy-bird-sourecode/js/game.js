@@ -53,6 +53,7 @@ var game = {
         me.input.bindKey(me.input.KEY.M, "mute", true);
         me.input.bindPointer(me.input.KEY.SPACE);
         me.input.bindKey(me.input.KEY.S, "pause", true);
+        me.input.bindKey(me.input.KEY.F, "toggleFullscreen", true);
 
         //Factory Design Pattern which 
         //registers different entities in the game

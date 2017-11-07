@@ -19,18 +19,27 @@ game.HUD.Container = me.Container.extend({
         this.addChild(new game.HUD.ScoreItem(5, 5));
     },
     update: function(){
+        if (me.input.isKeyPressed("pause")) {
+            me.Renderable.extend()
+            me.audio.pause("theme");
+            me.state.pause();
+            var resume_loop = setInterval(function resume() {
             if (me.input.isKeyPressed("pause")) {
-                me.Renderable.extend()
-                me.audio.pause("theme");
-                me.state.pause();
-                var resume_loop = setInterval(function resume() {
-                    if (me.input.isKeyPressed("pause")) {
-                        clearInterval(resume_loop);
-                        me.audio.play("theme");
-                        me.state.resume();
-                    }   
-                },100); //end resume loop
-            }     
+                clearInterval(resume_loop);
+                me.audio.play("theme");
+                me.state.resume();
+                }   
+            },100); //end resume loop
+        }
+        // toggle fullscreen on/off
+        if (me.input.isKeyPressed("toggleFullscreen")) {
+            if (!me.device.isFullscreen) {
+                me.device.requestFullscreen();
+            } else {
+                me.device.exitFullscreen();
+            }
+        }
+        return true;
     }
 });
 
