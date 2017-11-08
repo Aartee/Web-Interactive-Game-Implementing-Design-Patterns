@@ -144,3 +144,68 @@ As a whole, in this week each team member has explored the existing clumsy bird 
 **6. Respect - Junaid**
 
 This week, we worked together and customized the clumsy bird game to loopy bird game. We shared our ideas with one another, and obtained the opinion of our team members regarding any further improvement. All members individually reviewed the work that we have completed so far, and provided their valuable opinions. Respect was clearly visible during opinion provision, and ideas sharing phase of our project. 
+
+---
+
+## Week 5:
+
+**1. Simplicty - Aartee**
+
+Scrum week has started from this week. We have decided to meet everyday to discuss the progress of the work, any problems while working, etc. We have kept working style simple such that everyone will work on separate feature of the game but with the collaboration with every other team members. By doing this it is easy to incraese the velocity of the work towards game as well as its not the complicate thing to focus on one feature at a time.
+
+In this week each member has worked on differnt features of the game by implementing the simplicity core value.
+
+**2. Eliminate Waste - Prathmesh**
+
+This week the scrum methodology was started and for that we decided to have daily stand up meetings to dscuss about each other progress.
+The code and the features have been finalized and we started hands on on our coding.For the upcomings weeks our aim is to focus on the design patterns that can be  mlemented in the game and start implementing them.
+
+The Eliminate waste core value was always kept in mind while building the project.
+
+**3. Communication - Shikhar**
+
+This week we all met and discused on the code implementation. Each team member took specific gamne modules to develop. From now on, we will focus on working code delivery every week and will be going with the scrum approach. Proper communication was maintained throughout the team by organizing weekly meetings, communicating via emails etc. 
+
+**4. Courage - Junaid**
+
+This week we met on regular basis to discuss the work among team members, and to plan how to proceed during the scrum phase of our project. Aspect of courage was clearly visible in the fact that all team members seemed completely ready to move forward, and collaborate with one another. Team members are working on various features of the game in collaboration with one another. The important aspect that is most prominently visible in this team work is that each team member clearly communicate and discuss his /her task with other team members to get the opinion of other members.
+
+**5. See The Whole - Aartee**
+
+Everyone now has the clear understanding of the features of the game and how to proceed with its implementation in the MelonJS engine.
+
+As a whole, in this week each team member has written the javascript code for various basic features of the game. Also, everyone has researched on design patterns that can be implemented in the game.
+
+**6. Respect - Junaid**
+
+This week, scrum phase of our project started, and we have started working on the code for our game. All team members discussed and provided their opinion about how to proceed and how to handle issues if one pops-up.  Respect among team members was clearly visible during the discussion about writing the code for game, and team members discussed about the expectations of users. User’s expectations were considered with all due respect, and will be considered in future too during the developmental phase of game.
+
+---
+
+## Week 6:
+
+**1. Simplicty - Aartee**
+
+This week everyone has implemented desgin patterns in the game. While writing the code evryone has made sure that the code is maintable, reusable and simple to understand others. Also while coding we have made the class/interface structure simple enough so that it will be easy to integrate the class diagram for the whole game.
+
+Hence, in this week each member has implemented design patterns in the game by implementing the simplicity core value.
+
+**2. Eliminate Waste - Prathmesh**
+
+This week the target was to implement the design patterns in the game. While coding we implemented Design patterns that we learned in the lectures thus saving time to learn them again. The main challenge was to decide where and when which design pattern should be implemented. While coding we always keep out core value in mind.  
+
+**3. Communication - Shikhar**
+
+This week we decided on design patterns to implement in our age. We all met for the meeting and each member chose certain patterns that he/she is going to implement. Besides this, each member suggested which game features he/she wants to implement. Proper communication was observed throughout the week.
+
+**4. Courage - Junaid**
+
+Team meetings during this week consists of discussion about the code that we developed and the design patterns that we implemented. We discussed about the dynamics of our code. Our code is reusable and very easy to maintain. Each team member analyzed the code to check if any improvement is possible, and provided his/her valuable opinion about the code. 
+
+**5. See The Whole - Aartee**
+
+As a whole in this week everyone has implemented various design patterns in the game. While brainstorming on the design patterns everyone has made sure that the ingration of code will be easy and simple to understand. Also, thought on how to create the class diagram is given by everyone.
+
+**6. Respect - Junaid**
+
+The week we met to discuss about the design patterns we will implement in our game. Each member provided his/her point of view about the task, and each team member selected 2 design patterns for implementation. Factor of respect was clearly visible throughout the team discussion among all team members, and respect was equally considered while thinking about the users of game. 
