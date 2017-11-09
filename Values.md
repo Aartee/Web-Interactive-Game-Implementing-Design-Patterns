@@ -209,3 +209,26 @@ As a whole in this week everyone has implemented various design patterns in the 
 **6. Respect - Junaid**
 
 The week we met to discuss about the design patterns we will implement in our game. Each member provided his/her point of view about the task, and each team member selected 2 design patterns for implementation. Factor of respect was clearly visible throughout the team discussion among all team members, and respect was equally considered while thinking about the users of game. 
+
+
+## Week 7:
+
+**1. Simplicty - Aartee**
+
+
+
+**2. Eliminate Waste - Prathmesh**
+
+This week, we continued with the design patterns and tried to study which design pattern can be implemented. We also added new functionalities to our code like pause and full screen. Our main focus is now to implement design patterns to the game and for that we are researching on design patterns implemented in javascript as our code is in javascript, thus eliminating waste. We always try to keep the core values in mind while coding.
+
+**3. Communication - Shikhar**
+
+
+**4. Courage -  Junaid**
+
+
+**5. See The Whole - Aartee**
+
+
+**6. Respect -  Junaid**
+

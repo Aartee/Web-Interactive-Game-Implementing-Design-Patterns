@@ -17,18 +17,25 @@ game.HUD.Container = me.Container.extend({
 
         // add our child score object at the top left corner
         this.addChild(new game.HUD.ScoreItem(5, 5));
+        this.addChild(new game.HUD.PauseButton(5,5));
     },
     update: function(){
         if (me.input.isKeyPressed("pause")) {
             me.Renderable.extend()
-            me.audio.pause("theme");
-            me.state.pause();
+            if(me.state.isRunning())
+            {
+                me.audio.pause("theme");
+                me.state.pause();
+            }
             var resume_loop = setInterval(function resume() {
             if (me.input.isKeyPressed("pause")) {
                 clearInterval(resume_loop);
-                me.audio.play("theme");
-                me.state.resume();
-                }   
+                if(me.state.isPaused())
+                {
+                    me.audio.play("theme");
+                    me.state.resume();
+                }
+            }   
             },100); //end resume loop
         }
         // toggle fullscreen on/off
@@ -86,4 +93,41 @@ var BackgroundLayer = me.ImageLayer.extend({
         }
         return true;
     }
+});
+
+// create a basic GUI Object
+game.HUD.PauseButton = me.GUI_Object.extend(
+{
+   init:function (x, y)
+   {
+      var settings = {}
+      settings.image = "pause";
+      settings.framewidth = 64;
+      settings.frameheight = 64;
+      // super constructor
+      this._super(me.GUI_Object, "init", [30,30,settings]);
+      // define the object z order
+      this.pos.z = 4;
+   },
+
+   // output something in the console
+   // when the object is clicked
+   onClick:function (event)
+   {
+      // don't propagate the event
+      
+      if(me.state.isPaused())
+        {
+            me.state.resume();
+            me.audio.play("theme");
+            me.input.bindPointer(me.input.KEY.S);
+        }
+      else if(me.state.isRunning())
+        {
+            me.state.pause();
+            me.audio.pause("theme");
+            me.input.bindPointer(me.input.KEY.S);
+        }
+    return false;
+   }
 });
