@@ -119,6 +119,38 @@ game.BirdEntity = me.Entity.extend({
 });
 
 
+game.LoopEntity = me.Entity.extend({
+    init: function(x, y) {
+        var settings = {};
+        settings.image = this.image = me.loader.getImage('loop');
+        settings.width = 148;
+        settings.height= 1664;
+        settings.framewidth = 148;
+        settings.frameheight = 1664;
+
+        this._super(me.Entity, 'init', [x, y, settings]);
+        this.alwaysUpdate = true;
+        this.body.gravity = 0;
+        this.body.vel.set(-5, 0);
+        this.type = 'loop';
+    },
+
+    update: function(dt) {
+        // mechanics.
+        if (!game.data.start) {
+            return this._super(me.Entity, 'update', [dt]);
+        }
+        this.pos.add(this.body.vel);
+        if (this.pos.x < -this.image.width) {
+            me.game.world.removeChild(this);
+        }
+        me.Rect.prototype.updateBounds.apply(this);
+        this._super(me.Entity, 'update', [dt]);
+        return true;
+    },
+
+});
+
 game.PipeEntity = me.Entity.extend({
     init: function(x, y) {
         var settings = {};
