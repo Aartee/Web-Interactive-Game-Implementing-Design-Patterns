@@ -43,13 +43,29 @@ game.PlayScreen = me.ScreenObject.extend({
         );
         me.game.world.addChild(this.getReady, 11);
 
+        this.level2 = new me.Sprite(
+            me.game.viewport.width/2,
+            me.game.viewport.height/2,
+            {image: 'level2'}
+        );
+        me.game.world.addChild(this.level2, 11);
+
         var that = this;
+        //Decorator Design pattern which changes level of the game
+        var fadeOut = new me.Tween(this.getReady).to({alpha: 0}, 2000)
+            .easing(me.Tween.Easing.Linear.None)
+            .onComplete(function() {
+                game.data.start = true;
+                me.game.world.addChild(new game.LoopGenerator(), 0);
+                me.game.world.removeChild(that.getReady);
+            }).start();
+
         var fadeOut = new me.Tween(this.getReady).to({alpha: 0}, 2000)
             .easing(me.Tween.Easing.Linear.None)
             .onComplete(function() {
                 game.data.start = true;
                 me.game.world.addChild(new game.PipeGenerator(), 0);
-                me.game.world.removeChild(that.getReady);
+                me.game.world.removeChild(that.level2);
             }).start();
     },
 
