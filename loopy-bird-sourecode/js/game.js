@@ -20,7 +20,8 @@ var game = {
         {name: "getready", type:"image", src: "data/img/getready.png"},
         {name: "new", type:"image", src: "data/img/new.png"},
         {name: "newhiscore", type:"image", src: "data/img/newhiscore.png"},
-        {name: "loop", type:"image", src: "data/img/loop.png"},
+        {name: "loop", type:"image", src: "data/img/rsz_loop.png"},
+        {name: "level2", type:"image", src: "data/img/getready.png"},
         // sounds
         {name: "theme", type: "audio", src: "data/bgm/"},
         {name: "hit", type: "audio", src: "data/sfx/"},
