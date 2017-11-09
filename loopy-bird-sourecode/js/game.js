@@ -20,6 +20,7 @@ var game = {
         {name: "getready", type:"image", src: "data/img/getready.png"},
         {name: "new", type:"image", src: "data/img/new.png"},
         {name: "newhiscore", type:"image", src: "data/img/newhiscore.png"},
+        {name: "loop", type:"image", src: "data/img/loop.png"},
         // sounds
         {name: "theme", type: "audio", src: "data/bgm/"},
         {name: "hit", type: "audio", src: "data/sfx/"},
@@ -64,6 +65,7 @@ var game = {
 
     "factoryMethod": function() {
         me.pool.register("clumsy", game.BirdEntity);
+        me.pool.register("loop", game.LoopEntity, true);
         me.pool.register("pipe", game.PipeEntity, true);
         me.pool.register("hit", game.HitEntity, true);
         me.pool.register("ground", game.Ground, true);
