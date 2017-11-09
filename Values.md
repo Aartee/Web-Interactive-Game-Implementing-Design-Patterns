@@ -230,5 +230,5 @@ This week, we continued with the design patterns and tried to study which design
 **5. See The Whole - Aartee**
 
 
-**6. Respect - Junaid**
+**6. Respect -  Junaid**
 
