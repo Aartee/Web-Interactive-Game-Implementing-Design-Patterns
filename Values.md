@@ -224,7 +224,7 @@ This week, we continued with the design patterns and tried to study which design
 **3. Communication - Shikhar**
 
 
-**4. Courage - Junaid**
+**4. Courage -  Junaid**
 
 
 **5. See The Whole - Aartee**
