@@ -83,7 +83,7 @@ game.BirdEntity = me.Entity.extend({
 
     onCollision: function(response) {
         var obj = response.b;
-        if (obj.type === 'pipe' || obj.type === 'ground') {
+        if (obj.type === 'pipe' || obj.type === 'ground' || obj.type === 'loop') {
             me.device.vibrate(500);
             this.collided = true;
         }
@@ -148,7 +148,32 @@ game.LoopEntity = me.Entity.extend({
         this._super(me.Entity, 'update', [dt]);
         return true;
     },
+});
 
+game.LoopGenerator = me.Renderable.extend({
+    init: function() {
+        this._super(me.Renderable, 'init', [0, me.game.viewport.width, me.game.viewport.height, 92]);
+        this.alwaysUpdate = true;
+        this.generate = 0;
+        this.loopFrequency = 92;
+        this.posX = 225;
+    },
+
+    update: function(dt) {
+        if (this.generate++ % this.loopFrequency == 0) {
+            var posY = Number.prototype.random(
+                    me.video.renderer.getHeight() - 100,
+                    200
+            );
+            var loop = new me.pool.pull('loop', this.posX, posY);
+            var hitPos = posY - 100;
+            var hit = new me.pool.pull("hit", this.posX, hitPos);
+            //loop.renderable.currentTransform.scaleY(-1);
+            me.game.world.addChild(loop, 10);
+            me.game.world.addChild(hit, 11);
+        }
+        this._super(me.Entity, "update", [dt]);
+    },
 });
 
 game.PipeEntity = me.Entity.extend({
