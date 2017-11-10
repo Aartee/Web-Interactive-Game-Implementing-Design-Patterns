@@ -233,3 +233,4 @@ Most of this week’s discussion revolved around the various additional design p
 
 **6. Respect -  Junaid**
 
+During this week, all team members respectfully discussed about the further improvements that can be made to our game by implementing additional design patterns. Team members took in to account the users of our game, and put themselves in to the user’s shoes to better analyze interests of users, and discussed about the features that if we add will increase the interest of users in our game. Every team member provided his/her opinion about bringing improvements to our game, and all team members respected the viewpoint of one another.
