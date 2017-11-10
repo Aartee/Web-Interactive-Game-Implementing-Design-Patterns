@@ -226,6 +226,7 @@ This week, we continued with the design patterns and tried to study which design
 
 **4. Courage -  Junaid**
 
+Most of this week’s discussion revolved around the various additional design patterns that can be implemented on our game. In addition to design patterns, we also talked about the additional modifications that can be made to the work that we have completed so far on our game. We discussed about those modifications, and every team member courageously gave his/her opinion about how we can implement those modifications, and how those modifications will increase the interest of users in our game.
 
 **5. See The Whole - Aartee**
 
