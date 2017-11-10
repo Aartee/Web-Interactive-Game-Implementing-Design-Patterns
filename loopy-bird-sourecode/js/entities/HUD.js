@@ -3,19 +3,19 @@ game.HUD = game.HUD || {};
 game.HUD.Container = me.Container.extend({
     init: function() {
         this._super(me.Container, 'init');
-        // persistent across level change.
+        // persistent across level change
         this.isPersistent = true;
 
-        // non collidable.
+        // non collidable
         this.collidable = false;
 
-        // make sure our object is always draw first.
+        // make sure our object is always draw first
         this.z = Infinity;
 
-        // give a name.
+        // give a name
         this.name = "HUD";
 
-        // add our child score object at the top left corner.
+        // add our child score object at the top left corner
         this.addChild(new game.HUD.ScoreItem(5, 5));
         this.addChild(new game.HUD.PauseButton(5,5));
     },
@@ -36,9 +36,9 @@ game.HUD.Container = me.Container.extend({
                     me.state.resume();
                 }
             }   
-            },100); //end resume loop.
+            },100); //end resume loop
         }
-        // toggle fullscreen on/off.
+        // toggle fullscreen on/off
         if (me.input.isKeyPressed("toggleFullscreen")) {
             if (!me.device.isFullscreen) {
                 me.device.requestFullscreen();
@@ -58,7 +58,7 @@ game.HUD.ScoreItem = me.Renderable.extend({
         // local copy of the global score
         this.stepsFont = new me.Font('gamefont', 80, '#000', 'center');
 
-        // make sure we use screen coordinates.
+        // make sure we use screen coordinates
         this.floating = true;
     },
 
@@ -95,7 +95,7 @@ var BackgroundLayer = me.ImageLayer.extend({
     }
 });
 
-// create a basic GUI Object.
+// create a basic GUI Object
 game.HUD.PauseButton = me.GUI_Object.extend(
 {
    init:function (x, y)
@@ -106,12 +106,12 @@ game.HUD.PauseButton = me.GUI_Object.extend(
       settings.frameheight = 64;
       // super constructor
       this._super(me.GUI_Object, "init", [30,30,settings]);
-      // define the object z order.
+      // define the object z order
       this.pos.z = 4;
    },
 
-   // output something in the console.
-   // when the object is clicked.
+   // output something in the console
+   // when the object is clicked
    onClick:function (event)
    {
       // don't propagate the event
