@@ -21,10 +21,12 @@ game.HUD.Container = me.Container.extend({
     },
     update: function(){
         if (me.input.isKeyPressed("pause")) {
+            var a;
             me.Renderable.extend()
             if(me.state.isRunning())
             {
                 me.audio.pause("theme");
+                a= me.game.world.addChild(new game.PauseScreen());
                 me.state.pause();
             }
             var resume_loop = setInterval(function resume() {
@@ -34,6 +36,7 @@ game.HUD.Container = me.Container.extend({
                 {
                     me.audio.play("theme");
                     me.state.resume();
+                    me.game.world.removeChild(a);
                 }
             }   
             },100); //end resume loop
@@ -108,6 +111,7 @@ game.HUD.PauseButton = me.GUI_Object.extend(
       this._super(me.GUI_Object, "init", [30,30,settings]);
       // define the object z order
       this.pos.z = 4;
+      var b;
    },
 
    // output something in the console
@@ -120,12 +124,14 @@ game.HUD.PauseButton = me.GUI_Object.extend(
         {
             me.state.resume();
             me.audio.play("theme");
+            me.game.world.removeChild(b);
             me.input.bindPointer(me.input.KEY.S);
         }
       else if(me.state.isRunning())
         {
             me.state.pause();
             me.audio.pause("theme");
+            b= me.game.world.addChild(new game.PauseScreen());
             me.input.bindPointer(me.input.KEY.S);
         }
     return false;
