@@ -215,7 +215,9 @@ The week we met to discuss about the design patterns we will implement in our ga
 
 **1. Simplicty - Aartee**
 
+This week also everyone has brainstormed and implemented desgin patterns in the game. While writing the code evryone has made sure that the code is maintable, reusable and simple to understand for others. Also while coding we have made the class/interface structure simple enough so that it will be easy to integrate the class diagram for the whole game.
 
+Hence, in this week each member has implemented design patterns in the game by adapting the simplicity core value.
 
 **2. Eliminate Waste - Prathmesh**
 
@@ -230,6 +232,9 @@ Most of this week’s discussion revolved around the various additional design p
 
 **5. See The Whole - Aartee**
 
+Everyone now has the clear understanding of the features of the game and how to proceed with its implementation by following the design patterns in the MelonJS engine.
+
+As a whole, in this week each team member has written the javascript code by implementing the design patterns in thr game. Also, everyone has started crating various UML diagrams for the game.
 
 **6. Respect -  Junaid**
 
