@@ -3,13 +3,13 @@ game.PauseScreen = me.ScreenObject.extend({
         this.dialog = new (me.Renderable.extend({
              init: function() {
                     console.log("hi");
-            this._super(me.Renderable, "init", [10,10, 10, 10]);
+            this._super(me.Renderable, "init", [10, 10, 10, 10]);
             var c;
         // local copy of the global score
-        this.stepsFont = new me.Font('gamefont', 80, '#000', 'center');
+        this.stepsFont = new me.Font('gamefont', 50, 'yellow', 'center');
         // make sure we use screen coordinates
         this.floating = true;
-        this.text = 'Press S to Resume';
+        this.text = 'Press S key or Click button to Resume';
     },
 
     draw: function (renderer) {
