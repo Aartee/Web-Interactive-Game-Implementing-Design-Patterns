@@ -225,6 +225,7 @@ This week, we continued with the design patterns and tried to study which design
 
 **3. Communication - Shikhar**
 
+This week we all met and finalized the features along with the design patterns we are implementing. In the next week, we will be focusing on UML diagrams. Every team member participated in the meeting and put his/her points in the meeting. Proper communication was maintained throughout the week.
 
 **4. Courage -  Junaid**
 
