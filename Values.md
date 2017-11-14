@@ -240,3 +240,25 @@ As a whole, in this week each team member has written the javascript code by imp
 **6. Respect -  Junaid**
 
 During this week, all team members respectfully discussed about the further improvements that can be made to our game by implementing additional design patterns. Team members took in to account the users of our game, and put themselves in to the user’s shoes to better analyze interests of users, and discussed about the features that if we add will increase the interest of users in our game. Every team member provided his/her opinion about bringing improvements to our game, and all team members respected the viewpoint of one another.
+
+
+## Week 8:
+
+**1. Simplicty - Aartee**
+
+
+**2. Eliminate Waste - Prathmesh**
+
+This week, our main aim was to stabilize the game so that, if last minute changes occurred we could handle them. We are trying to implement new levels in this game. We also are trying to implement various design patterns. We all have our weekly meeting regularly and everyone contributes equally. We all keep the core values in mind while working on the project and this has greatly helped us in the project progress and development.
+
+**3. Communication - Shikhar**
+
+
+**4. Courage -  Junaid**
+
+
+**5. See The Whole - Aartee**
+
+
+**6. Respect -  Junaid**
+
