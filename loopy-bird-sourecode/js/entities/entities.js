@@ -127,10 +127,10 @@ game.LoopEntity = me.Entity.extend({
     init: function(x, y) {
         var settings = {};
         settings.image = this.image = me.loader.getImage('loop');
-        settings.width = 148;
-        settings.height= 1664;
-        settings.framewidth = 148;
-        settings.frameheight = 1664;
+        settings.width = 128;
+        settings.height= 128;
+        settings.framewidth = 128;
+        settings.frameheight = 128;
 
         this._super(me.Entity, 'init', [x, y, settings]);
         this.alwaysUpdate = true;
