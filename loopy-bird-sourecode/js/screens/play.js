@@ -36,28 +36,73 @@ game.PlayScreen = me.ScreenObject.extend({
         //inputs
         me.input.bindPointer(me.input.pointer.LEFT, me.input.KEY.SPACE);
 
-        this.getReady = new me.Sprite(
+        //logic of changing levels in the game
+        if(game.data.steps <= 2){
+            this.getReady = new me.Sprite(
             me.game.viewport.width/2,
             me.game.viewport.height/2,
             {image: 'getready'}
-        );
-        me.game.world.addChild(this.getReady, 11);
+            );
+            me.game.world.addChild(this.getReady, 11);
 
-        this.level2 = new me.Sprite(
+            this.level1();
+            me.game.world.removeChild(this.getReady);
+
+         }else if(game.data.steps > 2 && game.data.steps <= 20){
+            this.level2 = new me.Sprite(
             me.game.viewport.width/2,
             me.game.viewport.height/2,
             {image: 'level2'}
-        );
-        me.game.world.addChild(this.level2, 11);
+            );
+            me.game.world.addChild(this.level2, 11);
 
-        var that = this;
+             this.level2();
+             
+             me.game.world.removeChild(this.level2, 11);
+         }else{
+             this.level3();
+        }
+    },
+
+    level1: function() {
+
         //Decorator Design pattern which changes level of the game
         var fadeOut = new me.Tween(this.getReady).to({alpha: 0}, 2000)
             .easing(me.Tween.Easing.Linear.None)
             .onComplete(function() {
                 game.data.start = true;
+                // if(game.data.steps > 2){}
                 me.game.world.addChild(new game.LoopGenerator(), 0);
-                me.game.world.removeChild(that.getReady);
+                //me.game.world.removeChild(this.getReady);
+            }).start();
+    },
+
+    level2: function(){
+
+        var fadeOut = new me.Tween(this.getReady).to({alpha: 0}, 2000)
+            .easing(me.Tween.Easing.Linear.None)
+            .onComplete(function() {
+                game.data.start = true;
+                me.game.world.addChild(new game.LoopGenerator(), 0);
+                me.game.world.removeChild(that.level2);
+            }).stop();
+
+        var fadeOut = new me.Tween(this.getReady).to({alpha: 0}, 2000)
+            .easing(me.Tween.Easing.Linear.None)
+            .onComplete(function() {
+                game.data.start = true;
+                me.game.world.addChild(new game.PipeGenerator(), 0);
+                me.game.world.removeChild(that.level2);
+            }).start();
+    },
+
+    level3: function(){
+        var fadeOut = new me.Tween(this.getReady).to({alpha: 0}, 2000)
+            .easing(me.Tween.Easing.Linear.None)
+            .onComplete(function() {
+                game.data.start = true;
+                me.game.world.addChild(new game.LoopGenerator(), 0);
+                me.game.world.removeChild(that.level2);
             }).start();
 
         var fadeOut = new me.Tween(this.getReady).to({alpha: 0}, 2000)
