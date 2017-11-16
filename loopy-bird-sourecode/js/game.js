@@ -23,6 +23,7 @@ var game = {
         {name: "loop", type:"image", src: "data/img/rsz_loop.png"},
         {name: "level2", type:"image", src: "data/img/getready.png"},
         {name: "pause", type:"image", src: "data/img/pause.png"},
+        {name: "menu", type:"image", src: "data/img/menu-button.png"},
       
         // sounds
         {name: "theme", type: "audio", src: "data/bgm/"},
