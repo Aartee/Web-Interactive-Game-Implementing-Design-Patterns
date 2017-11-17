@@ -43,6 +43,11 @@ game.TitleScreen = me.ScreenObject.extend({
         me.game.world.addChild(this.ground1, 11);
         me.game.world.addChild(this.ground2, 11);
 
+        this.sky1 = me.pool.pull('sky', 0, 0);
+        this.sky2 = me.pool.pull('sky', me.game.viewport.width, 0);
+        me.game.world.addChild(this.sky1, 11);
+        me.game.world.addChild(this.sky2, 11);
+
         // create a basic GUI Object
         var myButton = me.GUI_Object.extend(
         {
@@ -97,6 +102,8 @@ game.TitleScreen = me.ScreenObject.extend({
         me.input.unbindPointer(me.input.pointer.LEFT);
         this.ground1 = null;
         this.ground2 = null;
+        this.sky1 = null;
+        this.sky2 = null;
         me.game.world.removeChild(this.logo);
         this.logo = null;
     }
