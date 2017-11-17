@@ -300,3 +300,28 @@ game.Ground = me.Entity.extend({
     },
 
 });
+
+game.Sky = me.Entity.extend({
+    init: function(x, y) {
+        var settings = {};
+        settings.image = me.loader.getImage('sky');
+        settings.width = 900;
+        settings.height= 90;
+        this._super(me.Entity, 'init', [x, y, settings]);
+        this.alwaysUpdate = true;
+        this.body.gravity = 0;
+        this.body.vel.set(-4, 0);
+        this.type = 'sky';
+    },
+
+    update: function(dt) {
+        // mechanics
+        this.pos.add(this.body.vel);
+        if (this.pos.x < -this.renderable.width) {
+            this.pos.x = me.video.renderer.getWidth() - 10;
+        }
+        me.Rect.prototype.updateBounds.apply(this);
+        return this._super(me.Entity, 'update', [dt]);
+    },
+
+});
