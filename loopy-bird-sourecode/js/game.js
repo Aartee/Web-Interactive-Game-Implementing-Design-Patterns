@@ -14,6 +14,7 @@ var game = {
         {name: "pipe", type:"image", src: "data/img/pipe.png"},
         {name: "logo", type:"image", src: "data/img/logo.png"},
         {name: "ground", type:"image", src: "data/img/ground.png"},
+        {name: "sky", type:"image", src: "data/img/sky.png"},
         {name: "gameover", type:"image", src: "data/img/gameover.png"},
         {name: "gameoverbg", type:"image", src: "data/img/gameoverbg.png"},
         {name: "hit", type:"image", src: "data/img/hit.png"},
@@ -73,6 +74,7 @@ var game = {
         me.pool.register("pipe", game.PipeEntity, true);
         me.pool.register("hit", game.HitEntity, true);
         me.pool.register("ground", game.Ground, true);
+        me.pool.register("sky", game.Sky, true);
     }
 };
 
