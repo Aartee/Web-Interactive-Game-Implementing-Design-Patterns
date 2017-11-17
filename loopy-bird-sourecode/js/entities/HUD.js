@@ -1,5 +1,54 @@
 game.HUD = game.HUD || {};
 
+/* COMMAND DESIGN PATTERN */
+var invoker= {
+    check:function(){
+        if (me.input.isKeyPressed("mute"))
+        {
+            muteCommand.execute();
+        }
+        if (me.input.isKeyPressed("pause"))
+        {
+            pauseCommand.execute();
+        }
+    }
+};
+
+var muteCommand= {
+    execute:function(){
+         game.data.muted = !game.data.muted;
+            if (game.data.muted){
+                me.audio.disable();
+            }else{
+                me.audio.enable();
+            }
+    }
+};
+
+var pauseCommand= {
+    execute:function(){
+        var a;
+            me.Renderable.extend()
+            if(me.state.isRunning())
+            {
+                me.audio.pause("theme");
+                a= me.game.world.addChild(new game.PauseScreen());
+                me.state.pause();
+            }
+            var resume_loop = setInterval(function resume() {
+            if (me.input.isKeyPressed("pause")) {
+                clearInterval(resume_loop);
+                if(me.state.isPaused())
+                {
+                    me.audio.play("theme");
+                    me.state.resume();
+                    me.game.world.removeChild(a);
+                }
+            }   
+            },100); //end resume loop
+    }
+};
+
 game.HUD.Container = me.Container.extend({
     init: function() {
         this._super(me.Container, 'init');
@@ -20,27 +69,6 @@ game.HUD.Container = me.Container.extend({
         this.addChild(new game.HUD.PauseButton(5,5));
     },
     update: function(){
-        if (me.input.isKeyPressed("pause")) {
-            var a;
-            me.Renderable.extend()
-            if(me.state.isRunning())
-            {
-                me.audio.pause("theme");
-                a= me.game.world.addChild(new game.PauseScreen());
-                me.state.pause();
-            }
-            var resume_loop = setInterval(function resume() {
-            if (me.input.isKeyPressed("pause")) {
-                clearInterval(resume_loop);
-                if(me.state.isPaused())
-                {
-                    me.audio.play("theme");
-                    me.state.resume();
-                    me.game.world.removeChild(a);
-                }
-            }   
-            },100); //end resume loop
-        }
         // toggle fullscreen on/off
         if (me.input.isKeyPressed("toggleFullscreen")) {
             if (!me.device.isFullscreen) {
@@ -49,6 +77,7 @@ game.HUD.Container = me.Container.extend({
                 me.device.exitFullscreen();
             }
         }
+        invoker.check();
         return true;
     }
 });
@@ -83,18 +112,6 @@ var BackgroundLayer = me.ImageLayer.extend({
         settings.ratio = 1;
         // call parent constructor
         this._super(me.ImageLayer, 'init', [0, 0, settings]);
-    },
-
-    update: function() {
-        if (me.input.isKeyPressed('mute')) {
-            game.data.muted = !game.data.muted;
-            if (game.data.muted){
-                me.audio.disable();
-            }else{
-                me.audio.enable();
-            }
-        }
-        return true;
     }
 });
 
