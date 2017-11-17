@@ -56,6 +56,11 @@ game.GameOverScreen = me.ScreenObject.extend({
         me.game.world.addChild(this.ground1, 11);
         me.game.world.addChild(this.ground2, 11);
 
+        this.sky1 = me.pool.pull('sky', 0, 0);
+        this.sky2 = me.pool.pull('sky', me.game.viewport.width, 0);
+        me.game.world.addChild(this.sky1, 11);
+        me.game.world.addChild(this.sky2, 11);
+
         // add the dialog with the game information
         if (game.data.newHiScore) {
             //Oberver design pattern - notifying player a new hi-score
@@ -143,6 +148,8 @@ game.GameOverScreen = me.ScreenObject.extend({
         me.input.unbindPointer(me.input.pointer.LEFT);
         this.ground1 = null;
         this.ground2 = null;
+        this.sky1 = null;
+        this.sky2 = null;
         this.font = null;
         me.audio.stop("theme");
     }
