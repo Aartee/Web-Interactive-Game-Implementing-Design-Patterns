@@ -1,5 +1,26 @@
 game.HUD = game.HUD || {};
 
+/* COMMAND DESIGN PATTERN */
+var invoker= {
+    check:function(){
+        if (me.input.isKeyPressed("mute"))
+        {
+            muteCommand.execute();
+        }
+    }
+};
+
+var muteCommand= {
+    execute:function(){
+         game.data.muted = !game.data.muted;
+            if (game.data.muted){
+                me.audio.disable();
+            }else{
+                me.audio.enable();
+            }
+    }
+};
+
 game.HUD.Container = me.Container.extend({
     init: function() {
         this._super(me.Container, 'init');
@@ -49,6 +70,7 @@ game.HUD.Container = me.Container.extend({
                 me.device.exitFullscreen();
             }
         }
+        invoker.check();
         return true;
     }
 });
@@ -83,18 +105,6 @@ var BackgroundLayer = me.ImageLayer.extend({
         settings.ratio = 1;
         // call parent constructor
         this._super(me.ImageLayer, 'init', [0, 0, settings]);
-    },
-
-    update: function() {
-        if (me.input.isKeyPressed('mute')) {
-            game.data.muted = !game.data.muted;
-            if (game.data.muted){
-                me.audio.disable();
-            }else{
-                me.audio.enable();
-            }
-        }
-        return true;
     }
 });
 
