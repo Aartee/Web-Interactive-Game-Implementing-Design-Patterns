@@ -256,6 +256,7 @@ This week, our main aim was to stabilize the game so that, if last minute change
 
 **4. Courage -  Junaid**
 
+Our main goal for this week was to wrap up things, and all team members spent some extra time on moving things towards the final destination. All team members worked extremely courageouly and hard to make this possible. The reason we wanted to wrap up different phases of our project earlier is that if the need for changes arise, we should have enough time to work on those changes. Currently, we are also working on the implementation of various design patterns that we chose last week for implementation. 
 
 **5. See The Whole - Aartee**
 
