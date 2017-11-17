@@ -7,6 +7,10 @@ var invoker= {
         {
             muteCommand.execute();
         }
+        if (me.input.isKeyPressed("pause"))
+        {
+            pauseCommand.execute();
+        }
     }
 };
 
@@ -18,6 +22,30 @@ var muteCommand= {
             }else{
                 me.audio.enable();
             }
+    }
+};
+
+var pauseCommand= {
+    execute:function(){
+        var a;
+            me.Renderable.extend()
+            if(me.state.isRunning())
+            {
+                me.audio.pause("theme");
+                a= me.game.world.addChild(new game.PauseScreen());
+                me.state.pause();
+            }
+            var resume_loop = setInterval(function resume() {
+            if (me.input.isKeyPressed("pause")) {
+                clearInterval(resume_loop);
+                if(me.state.isPaused())
+                {
+                    me.audio.play("theme");
+                    me.state.resume();
+                    me.game.world.removeChild(a);
+                }
+            }   
+            },100); //end resume loop
     }
 };
 
@@ -41,27 +69,6 @@ game.HUD.Container = me.Container.extend({
         this.addChild(new game.HUD.PauseButton(5,5));
     },
     update: function(){
-        if (me.input.isKeyPressed("pause")) {
-            var a;
-            me.Renderable.extend()
-            if(me.state.isRunning())
-            {
-                me.audio.pause("theme");
-                a= me.game.world.addChild(new game.PauseScreen());
-                me.state.pause();
-            }
-            var resume_loop = setInterval(function resume() {
-            if (me.input.isKeyPressed("pause")) {
-                clearInterval(resume_loop);
-                if(me.state.isPaused())
-                {
-                    me.audio.play("theme");
-                    me.state.resume();
-                    me.game.world.removeChild(a);
-                }
-            }   
-            },100); //end resume loop
-        }
         // toggle fullscreen on/off
         if (me.input.isKeyPressed("toggleFullscreen")) {
             if (!me.device.isFullscreen) {
