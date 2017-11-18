@@ -1,3 +1,7 @@
+//Modular Design Pttern
+//Here Private members are kept in the closure.
+//Public members are exposed in the return object.
+//Like returning Entity object.
 game.GameOverScreen = me.ScreenObject.extend({
     init: function() {
         this.savedData = null;
