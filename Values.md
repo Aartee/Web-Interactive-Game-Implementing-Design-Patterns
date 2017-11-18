@@ -246,6 +246,7 @@ During this week, all team members respectfully discussed about the further impr
 
 **1. Simplicty - Aartee**
 
+In this last week of the project, we have implemeted design patterns in the game and integrated all the functionalities at one place such that it will be as simple as possible. Also, everyone has created simple and efficient UML diagrams. 
 
 **2. Eliminate Waste - Prathmesh**
 
@@ -260,6 +261,7 @@ Our main goal for this week was to wrap up things, and all team members spent so
 
 **5. See The Whole - Aartee**
 
+As a whole, this week everyone has implemented design patterns and integrated the whole game. Also, each team member has created the UML diagrams for the game. While doing integration each team member has kept the implementation of design pattern at one place according to respective design patterns.
 
 **6. Respect -  Junaid**
 
