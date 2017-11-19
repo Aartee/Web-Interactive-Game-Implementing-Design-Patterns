@@ -265,3 +265,4 @@ As a whole, this week everyone has implemented design patterns and integrated th
 
 **6. Respect -  Junaid**
 
+This week we worked on finishing things up, since this was the last week of our project. This week we implemented some additional design patterns, and worked on to bring any possible improvements to our game. All team member respected one another's work, and provided their opinion about the project. The improvements that we made to our game were made while considering the interest of users of our game.
