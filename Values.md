@@ -254,6 +254,7 @@ This week, our main aim was to stabilize the game so that, if last minute change
 
 **3. Communication - Shikhar**
 
+This week we met and worked on all the open issues. We put design patterns in our code. All the team members contributed equally and proper communication channels were maintained throughout the team. We also looked upon the final game and checked if we need to add any other important features. 
 
 **4. Courage -  Junaid**
 
