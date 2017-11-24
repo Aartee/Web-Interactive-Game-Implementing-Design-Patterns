@@ -87,14 +87,19 @@ game.BirdEntity = me.Entity.extend({
 
     onCollision: function(response) {
         var obj = response.b;
-        if (obj.type === 'pipe' || obj.type === 'ground' || obj.type === 'loop') {
+        if (obj.type === 'pipe' || obj.type === 'ground') {
             me.device.vibrate(500);
             this.collided = true;
+        }
+        if(obj.type === 'loop'){
+            this.collided = false;
+            me.game.world.removeChildNow(obj);
+            game.data.steps++;
         }
         // remove the hit box.
         if (obj.type === 'hit') {
             me.game.world.removeChildNow(obj);
-            game.data.steps++;
+            
             me.audio.play('hit');
         }
     },

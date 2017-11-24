@@ -43,38 +43,33 @@ game.TitleScreen = me.ScreenObject.extend({
         me.game.world.addChild(this.ground1, 11);
         me.game.world.addChild(this.ground2, 11);
 
-        this.sky1 = me.pool.pull('sky', 0, 0);
-        this.sky2 = me.pool.pull('sky', me.game.viewport.width, 0);
-        me.game.world.addChild(this.sky1, 11);
-        me.game.world.addChild(this.sky2, 11);
+        // // create a basic GUI Object
+        // var myButton = me.GUI_Object.extend(
+        // {
+        //     init:function (x, y)
+        //     {
+        //         var settings = {}
+        //         settings.image = "menu";
+        //         settings.framewidth = 100;
+        //         settings.frameheight = 50;
+        //         // super constructor
+        //         this._super(me.GUI_Object, "init", [x, y, settings]);
+        //         // define the object z order
+        //         this.pos.z = 10;
+        //     },
 
-        // create a basic GUI Object
-        var myButton = me.GUI_Object.extend(
-        {
-            init:function (x, y)
-            {
-                var settings = {}
-                settings.image = "menu";
-                settings.framewidth = 100;
-                settings.frameheight = 50;
-                // super constructor
-                this._super(me.GUI_Object, "init", [x, y, settings]);
-                // define the object z order
-                this.pos.z = 10;
-            },
+        //     // output something in the console
+        //     // when the object is clicked
+        //     onClick:function (event)
+        //     {
+        //         console.log("clicked!");
+        //         // don't propagate the event
+        //         return false;
+        //     }
+        // });
 
-            // output something in the console
-            // when the object is clicked
-            onClick:function (event)
-            {
-                console.log("clicked!");
-                // don't propagate the event
-                return false;
-            }
-        });
-
-        // add the object at pos (10,10)
-        me.game.world.addChild(new myButton(50,50));
+        // // add the object at pos (10,10)
+        // me.game.world.addChild(new myButton(50,50));
 
         me.game.world.addChild(new (me.Renderable.extend ({
             // constructor
@@ -102,8 +97,6 @@ game.TitleScreen = me.ScreenObject.extend({
         me.input.unbindPointer(me.input.pointer.LEFT);
         this.ground1 = null;
         this.ground2 = null;
-        this.sky1 = null;
-        this.sky2 = null;
         me.game.world.removeChild(this.logo);
         this.logo = null;
     }

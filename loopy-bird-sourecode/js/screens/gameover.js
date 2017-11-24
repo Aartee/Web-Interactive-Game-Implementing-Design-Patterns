@@ -60,11 +60,6 @@ game.GameOverScreen = me.ScreenObject.extend({
         me.game.world.addChild(this.ground1, 11);
         me.game.world.addChild(this.ground2, 11);
 
-        this.sky1 = me.pool.pull('sky', 0, 0);
-        this.sky2 = me.pool.pull('sky', me.game.viewport.width, 0);
-        me.game.world.addChild(this.sky1, 11);
-        me.game.world.addChild(this.sky2, 11);
-
         // add the dialog with the game information
         if (game.data.newHiScore) {
             //Oberver design pattern - notifying player a new hi-score
@@ -92,8 +87,8 @@ game.GameOverScreen = me.ScreenObject.extend({
                     [0, 0, me.game.viewport.width/2, me.game.viewport.height/2]
                 );
                 this.font = new me.Font('gamefont', 20, 'black', 'left');
-                this.steps = 'Steps: ' + game.data.steps.toString();
-                this.topSteps= 'Higher Step: ' + me.save.topSteps.toString();
+                this.steps = 'Score: ' + game.data.steps.toString();
+                this.topSteps= 'Higher Score: ' + me.save.topSteps.toString();
                 this.newHiScoreMessage = 'Congratulations!!! New Hi Score';
                 this.oldHiScoreMessage = 'Well Done! Play again to beat HiScore';
             },
@@ -152,8 +147,6 @@ game.GameOverScreen = me.ScreenObject.extend({
         me.input.unbindPointer(me.input.pointer.LEFT);
         this.ground1 = null;
         this.ground2 = null;
-        this.sky1 = null;
-        this.sky2 = null;
         this.font = null;
         me.audio.stop("theme");
     }

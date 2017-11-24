@@ -31,11 +31,6 @@ game.PlayScreen = me.ScreenObject.extend({
         me.game.world.addChild(this.ground1, 11);
         me.game.world.addChild(this.ground2, 11);
 
-        this.sky1 = me.pool.pull('sky', 0, 0);
-        this.sky2 = me.pool.pull('sky', me.game.viewport.width, 0);
-        me.game.world.addChild(this.sky1, 11);
-        me.game.world.addChild(this.sky2, 11);
-
         this.HUD = new game.HUD.Container();
         me.game.world.addChild(this.HUD, 11);
 
@@ -130,8 +125,6 @@ game.PlayScreen = me.ScreenObject.extend({
         this.bird = null;
         this.ground1 = null;
         this.ground2 = null;
-        this.sky1 = null;
-        this.sky2 = null;
         me.input.unbindKey(me.input.KEY.SPACE);
         me.input.unbindPointer(me.input.pointer.LEFT);
     }
