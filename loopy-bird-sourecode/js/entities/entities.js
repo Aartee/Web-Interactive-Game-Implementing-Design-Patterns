@@ -1,4 +1,3 @@
-//Modular Design Pttern
 //Here Private members are kept in the closure.
 //Public members are exposed in the return object.
 //Like returning Entity object.
@@ -89,6 +88,7 @@ game.BirdEntity = me.Entity.extend({
         var obj = response.b;
         if (obj.type === 'pipe' || obj.type === 'ground') {
             me.device.vibrate(500);
+            //game.data.steps++;
             this.collided = true;
         }
         if(obj.type === 'loop'){
@@ -99,7 +99,7 @@ game.BirdEntity = me.Entity.extend({
         // remove the hit box.
         if (obj.type === 'hit') {
             me.game.world.removeChildNow(obj);
-            
+            game.data.steps++;
             me.audio.play('hit');
         }
     },
@@ -166,9 +166,23 @@ game.LoopGenerator = me.Renderable.extend({
         this.generate = 0;
         this.loopFrequency = 92;
         this.posX = 225;
+        this.a=true;
     },
 
     update: function(dt) {
+        if(game.data.steps > 7 && this.a)
+        {
+          // console.log("level 3");
+            this.a=false;
+        }
+
+        if(game.data.steps > 3 && this.a)
+        {
+           // console.log("level 2");
+            //me.game.world.removeChild(this);
+            return true;
+        }
+
         if (this.generate++ % this.loopFrequency == 0) {
             var posY = Number.prototype.random(
                     me.video.renderer.getHeight() - 100,
@@ -179,7 +193,7 @@ game.LoopGenerator = me.Renderable.extend({
             var hit = new me.pool.pull("hit", this.posX, hitPos);
             //loop.renderable.currentTransform.scaleY(-1);
             me.game.world.addChild(loop, 10);
-            me.game.world.addChild(hit, 11);
+           // me.game.world.addChild(hit, 11);
         }
         this._super(me.Entity, "update", [dt]);
     },
@@ -228,6 +242,8 @@ game.PipeGenerator = me.Renderable.extend({
     },
 
     update: function(dt) {
+        if(game.data.steps <4)
+           return true;
         if (this.generate++ % this.pipeFrequency == 0) {
             var posY = Number.prototype.random(
                     me.video.renderer.getHeight() - 100,
