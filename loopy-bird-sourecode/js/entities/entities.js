@@ -1,6 +1,33 @@
 //Here Private members are kept in the closure.
 //Public members are exposed in the return object.
 //Like returning Entity object.
+
+//Strategy Design Pattern
+var setStrategy = function() {
+    this.level = "";
+};
+ 
+setStrategy.prototype = {
+    setStrategy: function(level) {
+        this.level = level;
+    }
+};
+
+var level1=function(){
+
+    var loop=new game.LoopGenerator();
+    me.game.world.addChild(loop, 0);
+}
+var level2=function(){
+
+    me.game.world.addChild(new game.PipeGenerator(), 0);
+    me.game.world.removeChild(loop);
+}
+var level3=function(){
+
+    me.game.world.addChild(new game.PipeGenerator(), 0);
+}
+
 game.BirdEntity = me.Entity.extend({
     init: function(x, y) {
         var settings = {};
