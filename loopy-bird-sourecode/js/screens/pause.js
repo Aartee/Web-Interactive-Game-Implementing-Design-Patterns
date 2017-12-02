@@ -1,3 +1,8 @@
+/* COMPOSITE DESIGN PATTERN
+ * Component: Game
+ * Leaf: PauseScreen
+ */
+
 game.PauseScreen = me.ScreenObject.extend({
     init: function(){
         this.dialog = new (me.Renderable.extend({
