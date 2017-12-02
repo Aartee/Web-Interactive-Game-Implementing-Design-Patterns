@@ -4,10 +4,32 @@
  */
 game.GameOverScreen = me.ScreenObject.extend({
     init: function() {
+        //Observers
         this.savedData = null;
         this.handler = null;
     },
 
+    notify: function(){
+    
+        if (game.data.newHiScore) {
+            //Oberver design pattern - notifying player a new hi-score
+            var newRect = new me.Sprite(
+                gameOverBG.width/2,
+                gameOverBG.height/2,
+                {image: 'newhiscore'}
+            );
+            me.game.world.addChild(newRect, 12);
+        }else{
+            //Oberver design pattern - notifying player to play more to beat
+            //the hi-score
+            var newRect1 = new me.Sprite(
+                gameOverBG.width/2,
+                gameOverBG.height/2,
+                {image: 'new'}
+            );
+            me.game.world.addChild(newRect1, 12);
+        }   
+    }
     onResetEvent: function() {
         //save section
         this.savedData = {
@@ -61,24 +83,7 @@ game.GameOverScreen = me.ScreenObject.extend({
         me.game.world.addChild(this.ground2, 11);
 
         // add the dialog with the game information
-        if (game.data.newHiScore) {
-            //Oberver design pattern - notifying player a new hi-score
-            var newRect = new me.Sprite(
-                gameOverBG.width/2,
-                gameOverBG.height/2,
-                {image: 'newhiscore'}
-            );
-            me.game.world.addChild(newRect, 12);
-        }else{
-            //Oberver design pattern - notifying player to play more to beat
-            //the hi-score
-            var newRect1 = new me.Sprite(
-                gameOverBG.width/2,
-                gameOverBG.height/2,
-                {image: 'new'}
-            );
-            me.game.world.addChild(newRect1, 12);
-        }
+        this.notify();
 
         this.dialog = new (me.Renderable.extend({
             // constructor
