@@ -63,12 +63,13 @@ var game = {
 
         //Factory Design Pattern which 
         //registers different entities in the game
-        this.factoryMethod();
+        this.entitySet();
 
         me.state.change(me.state.MENU);  
     },
-
-    "factoryMethod": function() {
+    
+    "entitySet": function(){
+    
         me.pool.register("clumsy", game.BirdEntity);
         me.pool.register("loop", game.LoopEntity, true);
         me.pool.register("pipe", game.PipeEntity, true);
@@ -76,5 +77,33 @@ var game = {
         me.pool.register("ground", game.Ground, true);
         me.pool.register("sky", game.Sky, true);
     }
+    
+    "factoryMethod": function() {
+        this.createEntity =function(type){
+        var entity;
+            if(type == "clumsy"){
+            entity = new BirdEntity();
+            }
+            else if(type == "loop"){
+                entity = new LoopEntity();
+            }
+            else if(type == "pipe"){
+            entity = new PipeEntity();
+            }
+            else if(type == "hit"){
+            entity = new HitEntity();
+            }
+            else if(type == "ground"){
+            entity = new Ground();
+            }
+           else if(type == "sky"){
+            entity = new Sky();
+            }
+            return entity;
+        }
+        
+           }
 };
+
+
 
