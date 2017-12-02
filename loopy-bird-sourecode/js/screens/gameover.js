@@ -25,7 +25,7 @@ game.GameOverScreen = me.ScreenObject.extend({
             var newRect1 = new me.Sprite(
                 gameOverBG.width/2,
                 gameOverBG.height/2,
-                {image: 'new'}
+                {image: 'playagain'}
             );
             me.game.world.addChild(newRect1, 12);
         }   
